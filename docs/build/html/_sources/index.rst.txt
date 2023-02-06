@@ -45,25 +45,6 @@ Thank you for visiting my blog. I look forward to sharing my knowledge and exper
    :maxdepth: 2
    :caption: Welcome:
 
-
-#.. toctree::
-   :maxdepth: 2
-   :caption: How did I make this blog?:
-
-   blogwriting/blogwriting
-   blogwriting/github_pages
-   blogwriting/sphinx_install
-   blogwriting/git_push
-
-#.. toctree::
-   :maxdepth: 2
-   :caption: Setting up a Home Lab:
-
-   homelab/setup
-   homelab/esxi_install
-   homelab/esxi_network
-   homelab/pfsense
-
 .. toctree::
    :maxdepth: 2
    :caption: Mac OS Administration:
