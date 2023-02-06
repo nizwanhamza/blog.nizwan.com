@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iTerm2 with Fish Shell &mdash; Nizwan&#39;s Personal Blog  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Welcome to my personal blog!" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Nizwan's Personal Blog
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Mac OS Administration:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">iTerm2 with Fish Shell</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#fish-shell-with-solarized-theme">Fish Shell with Solarized Theme</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#iterm2-installation">iTerm2 Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#homebrew-installation">Homebrew Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fish-shell-installation">Fish Shell Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#oh-my-fish-installation">Oh-my-fish Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#oh-my-fish-agnoster-package-installation">oh-my-fish agnoster package Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#powerline-font-installation">Powerline Font Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#solarized-color-installation">Solarized Color Installation</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Nizwan's Personal Blog</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">iTerm2 with Fish Shell</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/macos/iterm2.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="iterm2-with-fish-shell">
+<h1>iTerm2 with Fish Shell<a class="headerlink" href="#iterm2-with-fish-shell" title="Permalink to this heading"></a></h1>
+<img alt="../_images/0.png" src="../_images/0.png" />
+<section id="fish-shell-with-solarized-theme">
+<h2>Fish Shell with Solarized Theme<a class="headerlink" href="#fish-shell-with-solarized-theme" title="Permalink to this heading"></a></h2>
+<p><strong>iTerm2</strong> is a popular terminal emulator for macOS, designed to replace the built-in Terminal application. It offers features such as split panes, customizable profiles, triggers, search, paste history, and more. It is free, open source, and actively maintained by a community of developers.</p>
+<p>For those who are familiar, iTerm2 is a superior option compared to the terminal application in Mac OS. This guide will walk you through the process of configuring iTerm2 for improved daily productivity by customizing its appearance with cool colors and clear fonts.</p>
+</section>
+<section id="iterm2-installation">
+<h2>iTerm2 Installation<a class="headerlink" href="#iterm2-installation" title="Permalink to this heading"></a></h2>
+<p>Initially, obtain the iTerm2 application from its official website.</p>
+<p><a class="reference external" href="https://iterm2.com/downloads.html">https://iterm2.com/downloads.html</a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is advisable to use a stable version of iTerm2 for work or official purposes. At the time of writing this tutorial, 3.4.19 is the stable version.</p>
+</div>
+<p>A simple zip file will be downloaded. Extract the contents and move the iTerm.app file to Application directory.</p>
+<img alt="../_images/1.png" src="../_images/1.png" />
+<p>You can launch the iTerm application using any of your favorite method now. At the first launch, it may prompt you for auto-update option. It’s highly recommended to enable the auto update by pressing “Check Automatically”</p>
+<img alt="../_images/2.png" src="../_images/2.png" />
+<p>The iterm2 is ready to use now and below is the look of the iterm2 terminal window. It’s time to modify the look and feel.</p>
+<img alt="../_images/3.png" src="../_images/3.png" />
+</section>
+<section id="homebrew-installation">
+<h2>Homebrew Installation<a class="headerlink" href="#homebrew-installation" title="Permalink to this heading"></a></h2>
+<p>The below code will download and install the MacOS package manager <strong>Homebrew</strong> for the local user. It may prompt you for some information and warnings. The default answers should be good for most cases.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="k">)</span><span class="s2">&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="fish-shell-installation">
+<h2>Fish Shell Installation<a class="headerlink" href="#fish-shell-installation" title="Permalink to this heading"></a></h2>
+<p>Use the below command to install fish shell.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>brew<span class="w"> </span>install<span class="w"> </span>fish
+</pre></div>
+</div>
+<p>Write the fish shell to system shells.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;/usr/local/bin/fish&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>-a<span class="w"> </span>/etc/shells
+</pre></div>
+</div>
+<p>Open the iTerm2 profiles by iTerm2 &gt; Settings &gt; Profiles. If you want to use only fish shell, use the Default profile. Else, you can create a new profile as per your requirement. In my case, I’m using the Default profile.</p>
+<p>Under Command section drop-down, select “Command” and add the the below command.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/usr/local/bin/fish
+</pre></div>
+</div>
+<img alt="../_images/4.png" src="../_images/4.png" />
+<p>This will make the iTerm to start in fish shell at startup.</p>
+<p>Close the setting window and restart iTerm2 to apply the new changes. You can see the look has changed as below.</p>
+<img alt="../_images/5.png" src="../_images/5.png" />
+</section>
+<section id="oh-my-fish-installation">
+<h2>Oh-my-fish Installation<a class="headerlink" href="#oh-my-fish-installation" title="Permalink to this heading"></a></h2>
+<p>Oh My Fish provides core infrastructure to allow you to install packages which extend or modify the look of your shell. More information can be found in <a class="reference external" href="https://github.com/oh-my-fish/oh-my-fish">https://github.com/oh-my-fish/oh-my-fish</a>.</p>
+<p>Run this command to install oh-my-fish.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install<span class="w"> </span><span class="p">|</span><span class="w"> </span>install
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you have issues running this command in iTerm2, please use the default Terminal application. Restart the iTerm2, notice the prompt has changed as below.</p>
+</div>
+</section>
+<section id="oh-my-fish-agnoster-package-installation">
+<h2>oh-my-fish agnoster package Installation<a class="headerlink" href="#oh-my-fish-agnoster-package-installation" title="Permalink to this heading"></a></h2>
+<p>Agnoster is a fish theme optimized for people who use <strong>Git</strong> kind of commands regularly. More information can be found in <a class="reference external" href="https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/Themes.md#agnoster">https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/Themes.md#agnoster</a>.</p>
+<p>Use the below command to install the theme</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>omf<span class="w"> </span>install<span class="w"> </span>agnoster
+</pre></div>
+</div>
+</section>
+<section id="powerline-font-installation">
+<h2>Powerline Font Installation<a class="headerlink" href="#powerline-font-installation" title="Permalink to this heading"></a></h2>
+<p>These fonts are pathed to adjust all symbolic outputs of fish and all related themes. Run the below commands to install the fonts to current user’s fonts directory.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/powerline/fonts.git<span class="w"> </span>--depth<span class="o">=</span><span class="m">1</span>
+<span class="nb">cd</span><span class="w"> </span>fonts
+./install.sh
+<span class="nb">cd</span><span class="w"> </span>..
+rm<span class="w"> </span>-rf<span class="w"> </span>fonts
+</pre></div>
+</div>
+<p>Now, open the iTerm2 profile again, switch to Text section and change the font to <strong>“Meslo LG M for Powerline”</strong>. If needed, adjust the font sizes.</p>
+<img alt="../_images/6.png" src="../_images/6.png" />
+<p>Restart the iTerm and notice the change in iTerm2 prompt.</p>
+</section>
+<section id="solarized-color-installation">
+<h2>Solarized Color Installation<a class="headerlink" href="#solarized-color-installation" title="Permalink to this heading"></a></h2>
+<p>As of this point, the intended look appeared but the colors are not comfortable. Please install the “Solarized Dark - Patched” color scheme to get the best colors in iTerm window and fonts.</p>
+<p>Save as this link in your local Downloads <a class="reference download internal" download="" href="../_downloads/b6cbbf6f067efe96c92c2958675be023/solarizeddarkpatched.itermcolors"><code class="xref download docutils literal notranslate"><span class="pre">Solarized</span> <span class="pre">Dark</span> <span class="pre">Patched</span> <span class="pre">Color</span> <span class="pre">Preset</span></code></a>.</p>
+<p>Double click and import the color scheme</p>
+<p>Open the iTerm2 profile again, switch to Colors section.</p>
+<p>Under “Color Presets” drop down menu, chose “Solarized Dark - Patched”</p>
+<p>Restart the iTerm and notice the change in iTerm2 prompt as below. This is our final look we are intended.</p>
+<img alt="../_images/7.png" src="../_images/7.png" />
+<img alt="../_images/8.png" src="../_images/8.png" />
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to my personal blog!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Nizwan Hamza.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

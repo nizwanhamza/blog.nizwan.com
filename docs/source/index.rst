@@ -43,13 +43,29 @@ Thank you for visiting my blog. I look forward to sharing my knowledge and exper
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Welcome:
 
 
+#.. toctree::
+   :maxdepth: 2
+   :caption: How did I make this blog?:
 
-Indices and tables
-==================
+   blogwriting/blogwriting
+   blogwriting/github_pages
+   blogwriting/sphinx_install
+   blogwriting/git_push
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+#.. toctree::
+   :maxdepth: 2
+   :caption: Setting up a Home Lab:
+
+   homelab/setup
+   homelab/esxi_install
+   homelab/esxi_network
+   homelab/pfsense
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Mac OS Administration:
+
+   macos/iterm2
