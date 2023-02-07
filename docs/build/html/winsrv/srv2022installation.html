@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Windows Server 2022 Installation &mdash; Nizwan&#39;s Personal Blog  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="iTerm2 with Fish Shell" href="../macos/iterm2.html" />
+    <link rel="prev" title="Welcome to my personal blog!" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Nizwan's Personal Blog
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Windows Server:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Windows Server 2022 Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installation-platform">Installation Platform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#setting-up-vm">Setting up VM</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Mac OS Administration:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../macos/iterm2.html">iTerm2 with Fish Shell</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Nizwan's Personal Blog</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Windows Server 2022 Installation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/winsrv/srv2022installation.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="windows-server-2022-installation">
+<h1>Windows Server 2022 Installation<a class="headerlink" href="#windows-server-2022-installation" title="Permalink to this heading"></a></h1>
+<p>Windows Server is an operating system created by Microsoft for use as a server for businesses and other organizations. It provides a platform for centralized management and administration of applications, data storage, and other services. It is available in various editions and has features like Active Directory, Remote Desktop Services, and Hyper-V virtualization, among others. Windows Server is designed to be highly scalable, secure, and reliable, making it an ideal choice for many organizations.</p>
+<img alt="../_images/ws2022.jpg" src="../_images/ws2022.jpg" />
+<p>Windows Server 2022 is the latest version of the Windows Server operating system developed by Microsoft. It was released in October 2021 and comes with several new features and improvements over previous versions. Some of the new features in Windows Server 2022 include:</p>
+<ul class="simple">
+<li><p>Improved Hybrid Capabilities: Windows Server 2022 provides better integration with Microsoft’s Azure cloud services, making it easier to deploy and manage hybrid environments.</p></li>
+<li><p>Enhanced Security: The new version of Windows Server includes improved security features, such as support for hardware-based security and enhanced encryption capabilities.</p></li>
+<li><p>Increased Scalability: Windows Server 2022 has been designed to support larger environments and more demanding workloads, with improved performance and increased capacity for storage and networking.</p></li>
+<li><p>Improved Management: The new version includes updated management tools and a streamlined setup process, making it easier for administrators to manage and maintain the server.</p></li>
+</ul>
+<p>Windows Server 2022 is available in several editions, including Standard, Datacenter, and Essentials, each with different features and capabilities to meet the needs of different types of organizations.</p>
+<section id="installation-platform">
+<h2>Installation Platform<a class="headerlink" href="#installation-platform" title="Permalink to this heading"></a></h2>
+<p>Windows Server 2022 can be installed on a physical server or as a virtual machine on a hypervisor platform. The installation process involves several steps, including:</p>
+<p>This document is written with below conditions.</p>
+<ul class="simple">
+<li><p>Installation media of Windows Server 2022 has been downloaded in .ISO format from <a class="reference external" href="https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022">Microsoft Evaluation center</a>.</p></li>
+<li><p>VMware esxi platform is used in this example</p></li>
+<li><p>Upload the .ISO file to the VMware datastore</p></li>
+<li><p>Windows Server 2022 Datacenter edition with graphical interface is used in this example</p></li>
+<li><p>This is a fresh OS installation. Not an upgrade</p></li>
+</ul>
+</section>
+<section id="setting-up-vm">
+<h2>Setting up VM<a class="headerlink" href="#setting-up-vm" title="Permalink to this heading"></a></h2>
+<p>Setting up a virtual machine (VM) for Windows Server 2022 in VMware ESXi involves the following steps:</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to my personal blog!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../macos/iterm2.html" class="btn btn-neutral float-right" title="iTerm2 with Fish Shell" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Nizwan Hamza.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -47,6 +47,12 @@ Thank you for visiting my blog. I look forward to sharing my knowledge and exper
 
 .. toctree::
    :maxdepth: 2
+   :caption: Windows Server:
+
+   winsrv/srv2022installation
+
+.. toctree::
+   :maxdepth: 2
    :caption: Mac OS Administration:
 
    macos/iterm2
