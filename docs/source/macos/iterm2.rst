@@ -156,3 +156,30 @@ Restart the iTerm and notice the change in iTerm2 prompt as below. This is our f
 
 .. image:: ./../image/macos/iterm/7.png
 .. image:: ./../image/macos/iterm/8.png
+
+Issues and Fixes
+----------------
+
+Once I have completed this documentation, I have received some feedback from colleagues and friends. Below are some issues faced and solutions. 
+
+1. Fish shell by default shorten the directory location at your prompt. If your working directory is too long, you will see only first letters of parent directories. You can simply fix this to make full directory visible by adding below line to ``~/.config/fish/config.fish``
+
+.. code-block:: bash
+    :linenos:
+
+    set -g fish_prompt_pwd_dir_length 0
+
+1.  At the installation section above, you can change the default profile by adding a command ``/usr/local/bin/fish``. By doing this, some users complained about a bug where many familiar commands are throwing an error ``Command not found``. 
+
+You can easily by pass this by completely switching to fish shell at login using this command. 
+
+.. code-block:: 
+    :linenos:
+
+    chsh -s /usr/local/bin/fish 
+
+Now, you can go back to iTerm2 > Settings > Profiles > Default and change the command to ``login``.
+
+.. note:: 
+
+    Please keep in mind that this command is changing your default shell hence all your terminal applications including default MacOS terminal will switch to fish shell. 

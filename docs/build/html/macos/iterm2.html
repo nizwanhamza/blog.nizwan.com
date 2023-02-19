@@ -56,6 +56,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#oh-my-fish-agnoster-package-installation">oh-my-fish agnoster package Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#powerline-font-installation">Powerline Font Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#solarized-color-installation">Solarized Color Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#issues-and-fixes">Issues and Fixes</a></li>
 </ul>
 </li>
 </ul>
@@ -185,6 +186,28 @@
 <p>Restart the iTerm and notice the change in iTerm2 prompt as below. This is our final look we are intended.</p>
 <img alt="../_images/7.png" src="../_images/7.png" />
 <img alt="../_images/8.png" src="../_images/8.png" />
+</section>
+<section id="issues-and-fixes">
+<h2>Issues and Fixes<a class="headerlink" href="#issues-and-fixes" title="Permalink to this heading"></a></h2>
+<p>Once I have completed this documentation, I have received some feedback from colleagues and friends. Below are some issues faced and solutions.</p>
+<ol class="arabic simple">
+<li><p>Fish shell by default shorten the directory location at your prompt. If your working directory is too long, you will see only first letters of parent directories. You can simply fix this to make full directory visible by adding below line to <code class="docutils literal notranslate"><span class="pre">~/.config/fish/config.fish</span></code></p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="nb">set</span><span class="w"> </span>-g<span class="w"> </span>fish_prompt_pwd_dir_length<span class="w"> </span><span class="m">0</span>
+</pre></div>
+</div>
+<ol class="arabic simple">
+<li><p>At the installation section above, you can change the default profile by adding a command <code class="docutils literal notranslate"><span class="pre">/usr/local/bin/fish</span></code>. By doing this, some users complained about a bug where many familiar commands are throwing an error <code class="docutils literal notranslate"><span class="pre">Command</span> <span class="pre">not</span> <span class="pre">found</span></code>.</p></li>
+</ol>
+<p>You can easily by pass this by completely switching to fish shell at login using this command.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">chsh</span> <span class="o">-</span><span class="n">s</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">fish</span>
+</pre></div>
+</div>
+<p>Now, you can go back to iTerm2 &gt; Settings &gt; Profiles &gt; Default and change the command to <code class="docutils literal notranslate"><span class="pre">login</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please keep in mind that this command is changing your default shell hence all your terminal applications including default MacOS terminal will switch to fish shell.</p>
+</div>
 </section>
 </section>
 
