@@ -56,3 +56,9 @@ Thank you for visiting my blog. I look forward to sharing my knowledge and exper
    :caption: Mac OS Administration:
 
    macos/iterm2
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Virtualization:
+
+   vmware/vcenter

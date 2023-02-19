@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VMware vCenter - Step-by-step &mdash; Nizwan&#39;s Personal Blog  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="iTerm2 with Fish Shell" href="../macos/iterm2.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Nizwan's Personal Blog
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Windows Server:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../winsrv/srv2022installation.html">Windows Server 2022 Installation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Mac OS Administration:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../macos/iterm2.html">iTerm2 with Fish Shell</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Virtualization:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">VMware vCenter - Step-by-step</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Nizwan's Personal Blog</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">VMware vCenter - Step-by-step</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/vmware/vcenter.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="vmware-vcenter-step-by-step">
+<h1>VMware vCenter - Step-by-step<a class="headerlink" href="#vmware-vcenter-step-by-step" title="Permalink to this heading"></a></h1>
+<p>VMware vCenter is an advanced server management software that provides a centralized platform for controlling vSphere environments for visibility across hybrid clouds.</p>
+<p>More details can be found in  <a class="reference external" href="https://www.vmware.com/products/vcenter.html">VMware official website</a>.</p>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading"></a></h2>
+<p>vSphere is a sophisticated product with multiple components to install and set up. To ensure a successful vSphere deployment, understand the sequence of tasks required.</p>
+<p>Installing vSphere includes the following tasks:</p>
+<img alt="../_images/summary.png" src="../_images/summary.png" />
+<p>You can deploy the vCenter Server appliance on an ESXi host or vCenter Server instance. In this guide, we are deploying vCenter server appliance on an <strong>ESXi host</strong> which is already deployed.</p>
+<p>You can use the GUI method to deploy the appliance interactively. Alternatively, you can use the CLI method to perform a silent deployment of the appliance. In this guide, we are deploying vCenter server appliance using <strong>GUI method</strong>.</p>
+</section>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this heading"></a></h2>
+<p>Below is the summary of required resources to start the installation. You can find the detailed system Requirements for the vCenter Server Appliance from <a class="reference external" href="https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vcenter.install.doc/GUID-752FCA83-1A9B-499E-9C65-D5625351C0B5.html">official guide</a>.</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Deployment client machine</dt><dd><ul>
+<li><p>Windows 32-bit or 64-bit</p></li>
+<li><p>MacOS</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>ESXi host 6.5 or later</dt><dd><ul>
+<li><p>CPU (min 2 vCPUs)</p></li>
+<li><p>Memory (min 12GB)</p></li>
+<li><p>Disk space (min 579GB)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Same DNS server configured for ESXi host and deployment machine. This is optional if you are using IP address only.</p></li>
+<li><p>Synchronize the clocks of the target server(s).</p></li>
+<li><p>Required firewall ports should be opened (if equiped)</p></li>
+<li><p>Supported web browser to access vCenter client</p></li>
+</ul>
+<p>With all prerequisites, download the required version of vCenter ISO file from official vmware download center. In this guide, I’m using VMware vCenter Server 7.0U3.</p>
+<p><a class="reference external" href="https://customerconnect.vmware.com/downloads/get-download?downloadGroup=VC70U3">https://customerconnect.vmware.com/downloads/get-download?downloadGroup=VC70U3</a></p>
+</section>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>Mount the ISO file and navigate to DVD-Drive &gt; vcsa-ui-installer &gt; win32. Launch the <cite>installer.exe</cite>. Since this is first time, chose <cite>Install</cite>.</p></li>
+</ol>
+<img alt="../_images/110.png" src="../_images/110.png" />
+<ol class="arabic simple" start="2">
+<li><p>Start the Stage 1 - Deploy vCenter Server.</p></li>
+</ol>
+<img alt="../_images/24.png" src="../_images/24.png" />
+<ol class="arabic simple" start="3">
+<li><p>Accept the terms and continue.</p></li>
+</ol>
+<img alt="../_images/32.png" src="../_images/32.png" />
+<ol class="arabic simple" start="4">
+<li><p>Enter the DNS name or IP address of the ESXi host where you want to deploy the vCenter server. Additionally, enter the username and password of ESXi.</p></li>
+</ol>
+<img alt="../_images/42.png" src="../_images/42.png" />
+<ol class="arabic simple" start="5">
+<li><p>Specify the VM name for the vCenter and root password for the appliance.</p></li>
+</ol>
+<img alt="../_images/52.png" src="../_images/52.png" />
+<ol class="arabic simple" start="6">
+<li><p>Select the deployement size and storage size. You can customize this as per your requirement with the given chart.</p></li>
+</ol>
+<img alt="../_images/62.png" src="../_images/62.png" />
+<ol class="arabic simple" start="7">
+<li><p>Select the datastore for the appliance and optionally you can chose to <cite>Thin Disk mode</cite> to save space.</p></li>
+</ol>
+<img alt="../_images/72.png" src="../_images/72.png" />
+<ol class="arabic simple" start="8">
+<li><p>Configure the network settings of the appliance as per your network design.</p></li>
+</ol>
+<img alt="../_images/82.png" src="../_images/82.png" />
+<ol class="arabic simple" start="9">
+<li><p>You can confirm the settings at summary page and continue the deployment. This will take some time to complete.</p></li>
+</ol>
+<img alt="../_images/91.png" src="../_images/91.png" />
+<ol class="arabic simple" start="10">
+<li><p>You can continue the configuration using the given continue button or with the given link. <code class="docutils literal notranslate"><span class="pre">https://vcenter-ip-or-DNS-name:5480</span></code></p></li>
+</ol>
+<img alt="../_images/101.png" src="../_images/101.png" />
+<ol class="arabic simple" start="11">
+<li><p>Now, you can start the Stage 2, Set up vCenter Server.</p></li>
+</ol>
+<img alt="../_images/112.png" src="../_images/112.png" />
+<ol class="arabic simple" start="12">
+<li><p>Synchronize time with your NTP servers and continue. You can enter multiple servers with comma seperated.</p></li>
+</ol>
+<img alt="../_images/121.png" src="../_images/121.png" />
+<ol class="arabic simple" start="13">
+<li><p>Create a new SSO domain, enter domain name, username and password to continue. If you have an existing domain, you can join there also.</p></li>
+</ol>
+<img alt="../_images/131.png" src="../_images/131.png" />
+<ol class="arabic simple" start="14">
+<li><p>If you wish, you can join the Vmware customer experience improvement program (CEIP).</p></li>
+</ol>
+<img alt="../_images/141.png" src="../_images/141.png" />
+<ol class="arabic simple" start="15">
+<li><p>Confirm your settings at summary page once again and start the setup deployement. You will get a warning saying “You cannot go back”.</p></li>
+</ol>
+<img alt="../_images/151.png" src="../_images/151.png" />
+<ol class="arabic simple" start="16">
+<li><p>Once the setup is completed, you can access the vCenter client by accessing <code class="docutils literal notranslate"><span class="pre">https://vcenter-ip-or-DNS-name:443</span></code></p></li>
+</ol>
+<img alt="../_images/161.png" src="../_images/161.png" />
+<img alt="../_images/171.png" src="../_images/171.png" />
+<ol class="arabic simple" start="17">
+<li><p>You can launch the HTML5 vSphere Client and login using the SSO credentials created during the deployment.</p></li>
+</ol>
+<img alt="../_images/181.png" src="../_images/181.png" />
+<img alt="../_images/191.png" src="../_images/191.png" />
+<ol class="arabic simple" start="18">
+<li><p>As the last step, you will have to install the license for the vCenter to get rid of the license warning.</p></li>
+</ol>
+<img alt="../_images/201.png" src="../_images/201.png" />
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../macos/iterm2.html" class="btn btn-neutral float-left" title="iTerm2 with Fish Shell" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Nizwan Hamza.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
