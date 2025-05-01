@@ -1,25 +1,24 @@
+
+
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>iTerm2 with Fish Shell &mdash; Nizwan&#39;s Personal Blog  documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
-        <script src="../_static/clipboard.min.js"></script>
-        <script src="../_static/copybutton.js"></script>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -32,11 +31,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> Nizwan's Personal Blog
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Nizwan's Personal Blog
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -79,7 +82,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active">iTerm2 with Fish Shell</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/macos/iterm2.rst.txt" rel="nofollow"> View page source</a>
@@ -91,15 +94,15 @@
            <div itemprop="articleBody">
              
   <section id="iterm2-with-fish-shell">
-<h1>iTerm2 with Fish Shell<a class="headerlink" href="#iterm2-with-fish-shell" title="Permalink to this heading"></a></h1>
+<h1>iTerm2 with Fish Shell<a class="headerlink" href="#iterm2-with-fish-shell" title="Link to this heading"></a></h1>
 <img alt="../_images/0.png" src="../_images/0.png" />
 <section id="fish-shell-with-solarized-theme">
-<h2>Fish Shell with Solarized Theme<a class="headerlink" href="#fish-shell-with-solarized-theme" title="Permalink to this heading"></a></h2>
+<h2>Fish Shell with Solarized Theme<a class="headerlink" href="#fish-shell-with-solarized-theme" title="Link to this heading"></a></h2>
 <p><strong>iTerm2</strong> is a popular terminal emulator for macOS, designed to replace the built-in Terminal application. It offers features such as split panes, customizable profiles, triggers, search, paste history, and more. It is free, open source, and actively maintained by a community of developers.</p>
 <p>For those who are familiar, iTerm2 is a superior option compared to the terminal application in Mac OS. This guide will walk you through the process of configuring iTerm2 for improved daily productivity by customizing its appearance with cool colors and clear fonts.</p>
 </section>
 <section id="iterm2-installation">
-<h2>iTerm2 Installation<a class="headerlink" href="#iterm2-installation" title="Permalink to this heading"></a></h2>
+<h2>iTerm2 Installation<a class="headerlink" href="#iterm2-installation" title="Link to this heading"></a></h2>
 <p>Initially, obtain the iTerm2 application from its official website.</p>
 <p><a class="reference external" href="https://iterm2.com/downloads.html">https://iterm2.com/downloads.html</a></p>
 <div class="admonition note">
@@ -114,14 +117,14 @@
 <img alt="../_images/3.png" src="../_images/3.png" />
 </section>
 <section id="homebrew-installation">
-<h2>Homebrew Installation<a class="headerlink" href="#homebrew-installation" title="Permalink to this heading"></a></h2>
+<h2>Homebrew Installation<a class="headerlink" href="#homebrew-installation" title="Link to this heading"></a></h2>
 <p>The below code will download and install the MacOS package manager <strong>Homebrew</strong> for the local user. It may prompt you for some information and warnings. The default answers should be good for most cases.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="k">)</span><span class="s2">&quot;</span>
 </pre></div>
 </div>
 </section>
 <section id="fish-shell-installation">
-<h2>Fish Shell Installation<a class="headerlink" href="#fish-shell-installation" title="Permalink to this heading"></a></h2>
+<h2>Fish Shell Installation<a class="headerlink" href="#fish-shell-installation" title="Link to this heading"></a></h2>
 <p>Use the below command to install fish shell.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>brew<span class="w"> </span>install<span class="w"> </span>fish
 </pre></div>
@@ -141,7 +144,7 @@
 <img alt="../_images/5.png" src="../_images/5.png" />
 </section>
 <section id="oh-my-fish-installation">
-<h2>Oh-my-fish Installation<a class="headerlink" href="#oh-my-fish-installation" title="Permalink to this heading"></a></h2>
+<h2>Oh-my-fish Installation<a class="headerlink" href="#oh-my-fish-installation" title="Link to this heading"></a></h2>
 <p>Oh My Fish provides core infrastructure to allow you to install packages which extend or modify the look of your shell. More information can be found in <a class="reference external" href="https://github.com/oh-my-fish/oh-my-fish">https://github.com/oh-my-fish/oh-my-fish</a>.</p>
 <p>Run this command to install oh-my-fish.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>curl<span class="w"> </span>https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install<span class="w"> </span><span class="p">|</span><span class="w"> </span>install
@@ -160,7 +163,7 @@
 <p>Restart the iTerm2, notice the prompt has changed as below.</p>
 </section>
 <section id="oh-my-fish-agnoster-package-installation">
-<h2>oh-my-fish agnoster package Installation<a class="headerlink" href="#oh-my-fish-agnoster-package-installation" title="Permalink to this heading"></a></h2>
+<h2>oh-my-fish agnoster package Installation<a class="headerlink" href="#oh-my-fish-agnoster-package-installation" title="Link to this heading"></a></h2>
 <p>Agnoster is a fish theme optimized for people who use <strong>Git</strong> kind of commands regularly. More information can be found in <a class="reference external" href="https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/Themes.md#agnoster">https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/Themes.md#agnoster</a>.</p>
 <p>Use the below command to install the theme</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>omf<span class="w"> </span>install<span class="w"> </span>agnoster
@@ -168,7 +171,7 @@
 </div>
 </section>
 <section id="powerline-font-installation">
-<h2>Powerline Font Installation<a class="headerlink" href="#powerline-font-installation" title="Permalink to this heading"></a></h2>
+<h2>Powerline Font Installation<a class="headerlink" href="#powerline-font-installation" title="Link to this heading"></a></h2>
 <p>These fonts are pathed to adjust all symbolic outputs of fish and all related themes. Run the below commands to install the fonts to current user’s fonts directory.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/powerline/fonts.git<span class="w"> </span>--depth<span class="o">=</span><span class="m">1</span>
 <span class="linenos">2</span><span class="nb">cd</span><span class="w"> </span>fonts
@@ -182,7 +185,7 @@
 <p>Restart the iTerm and notice the change in iTerm2 prompt.</p>
 </section>
 <section id="solarized-color-installation">
-<h2>Solarized Color Installation<a class="headerlink" href="#solarized-color-installation" title="Permalink to this heading"></a></h2>
+<h2>Solarized Color Installation<a class="headerlink" href="#solarized-color-installation" title="Link to this heading"></a></h2>
 <p>As of this point, the intended look appeared but the colors are not comfortable. Please install the “Solarized Dark - Patched” color scheme to get the best colors in iTerm window and fonts.</p>
 <p>Save as this link in your local Downloads <a class="reference download internal" download="" href="../_downloads/b6cbbf6f067efe96c92c2958675be023/solarizeddarkpatched.itermcolors"><code class="xref download docutils literal notranslate"><span class="pre">Solarized</span> <span class="pre">Dark</span> <span class="pre">Patched</span> <span class="pre">Color</span> <span class="pre">Preset</span></code></a>.</p>
 <p>Double click and import the color scheme</p>
@@ -193,7 +196,7 @@
 <img alt="../_images/8.png" src="../_images/8.png" />
 </section>
 <section id="issues-and-fixes">
-<h2>Issues and Fixes<a class="headerlink" href="#issues-and-fixes" title="Permalink to this heading"></a></h2>
+<h2>Issues and Fixes<a class="headerlink" href="#issues-and-fixes" title="Link to this heading"></a></h2>
 <p>Once I have completed this documentation, I have received some feedback from colleagues and friends. Below are some issues faced and solutions.</p>
 <ol class="arabic simple">
 <li><p>Fish shell by default shorten the directory location at your prompt. If your working directory is too long, you will see only first letters of parent directories. You can simply fix this to make full directory visible by adding below line to <code class="docutils literal notranslate"><span class="pre">~/.config/fish/config.fish</span></code></p></li>
@@ -227,7 +230,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2023, Nizwan Hamza.</p>
+    <p>&#169; Copyright 2025, Nizwan Hamza.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = "Nizwan's Personal Blog"
-copyright = '2023, Nizwan Hamza'
+copyright = '2025, Nizwan Hamza'
 author = 'Nizwan Hamza'
 
 # -- General configuration ---------------------------------------------------

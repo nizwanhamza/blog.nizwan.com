@@ -1,0 +1,7 @@
+name: blog
+services:
+    sphinx:
+        volumes:
+            - ./docs:/docs
+        image: sphinxdoc/sphinx
+        command: make html

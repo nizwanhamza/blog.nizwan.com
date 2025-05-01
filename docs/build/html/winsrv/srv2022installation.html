@@ -1,25 +1,24 @@
+
+
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Windows Server 2022 Installation &mdash; Nizwan&#39;s Personal Blog  documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
-        <script src="../_static/clipboard.min.js"></script>
-        <script src="../_static/copybutton.js"></script>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -32,11 +31,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> Nizwan's Personal Blog
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Nizwan's Personal Blog
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -56,6 +59,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../macos/iterm2.html">iTerm2 with Fish Shell</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Virtualization:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../vmware/vcenter.html">VMware vCenter - Step-by-step</a></li>
+</ul>
 
         </div>
       </div>
@@ -70,7 +77,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active">Windows Server 2022 Installation</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/winsrv/srv2022installation.rst.txt" rel="nofollow"> View page source</a>
@@ -82,7 +89,7 @@
            <div itemprop="articleBody">
              
   <section id="windows-server-2022-installation">
-<h1>Windows Server 2022 Installation<a class="headerlink" href="#windows-server-2022-installation" title="Permalink to this heading"></a></h1>
+<h1>Windows Server 2022 Installation<a class="headerlink" href="#windows-server-2022-installation" title="Link to this heading"></a></h1>
 <p>Windows Server is an operating system created by Microsoft for use as a server for businesses and other organizations. It provides a platform for centralized management and administration of applications, data storage, and other services. It is available in various editions and has features like Active Directory, Remote Desktop Services, and Hyper-V virtualization, among others. Windows Server is designed to be highly scalable, secure, and reliable, making it an ideal choice for many organizations.</p>
 <img alt="../_images/ws2022.jpg" src="../_images/ws2022.jpg" />
 <p>Windows Server 2022 is the latest version of the Windows Server operating system developed by Microsoft. It was released in October 2021 and comes with several new features and improvements over previous versions. Some of the new features in Windows Server 2022 include:</p>
@@ -94,7 +101,7 @@
 </ul>
 <p>Windows Server 2022 is available in several editions, including Standard, Datacenter, and Essentials, each with different features and capabilities to meet the needs of different types of organizations.</p>
 <section id="installation-platform">
-<h2>Installation Platform<a class="headerlink" href="#installation-platform" title="Permalink to this heading"></a></h2>
+<h2>Installation Platform<a class="headerlink" href="#installation-platform" title="Link to this heading"></a></h2>
 <p>Windows Server 2022 can be installed on a physical server or as a virtual machine on a hypervisor platform. The installation process involves several steps, including:</p>
 <p>This document is written with below conditions.</p>
 <ul class="simple">
@@ -106,7 +113,7 @@
 </ul>
 </section>
 <section id="setting-up-vm">
-<h2>Setting up VM<a class="headerlink" href="#setting-up-vm" title="Permalink to this heading"></a></h2>
+<h2>Setting up VM<a class="headerlink" href="#setting-up-vm" title="Link to this heading"></a></h2>
 <p>Setting up a virtual machine (VM) for Windows Server 2022 in VMware ESXi involves the following steps:</p>
 <ol class="arabic simple">
 <li><p>Login to ESXi, select Virtual Machines and click “Create/Register VM”</p></li>
@@ -115,79 +122,79 @@
 <ol class="arabic simple" start="2">
 <li><p>New virtual machine wizard will start. select “Create a new virtual machine” and click Next.</p></li>
 </ol>
-<img alt="../_images/11.png" src="../_images/11.png" />
+<img alt="../_images/110.png" src="../_images/110.png" />
 <ol class="arabic simple" start="3">
 <li><p>Give a name for the VM, select Guest OS family and version. Click Next</p></li>
 </ol>
-<img alt="../_images/21.png" src="../_images/21.png" />
+<img alt="../_images/22.png" src="../_images/22.png" />
 <ol class="arabic simple" start="4">
 <li><p>Select appropriate storage. Click Next</p></li>
 </ol>
-<img alt="../_images/31.png" src="../_images/31.png" />
+<img alt="../_images/32.png" src="../_images/32.png" />
 <ol class="arabic simple" start="5">
 <li><p>As per the guest OS selection, ESXi will determine hardware configuration. If needed, change CPU, Memory and Hard disk. Connect the right network and mound the .ISO file uloaded earlier. Click Next.</p></li>
 </ol>
-<img alt="../_images/41.png" src="../_images/41.png" />
+<img alt="../_images/42.png" src="../_images/42.png" />
 <ol class="arabic simple" start="6">
 <li><p>Verify the VM setting and click Finish.</p></li>
 </ol>
-<img alt="../_images/51.png" src="../_images/51.png" />
+<img alt="../_images/52.png" src="../_images/52.png" />
 </section>
 <section id="windows-server-2022-setup">
-<h2>Windows Server 2022 Setup<a class="headerlink" href="#windows-server-2022-setup" title="Permalink to this heading"></a></h2>
+<h2>Windows Server 2022 Setup<a class="headerlink" href="#windows-server-2022-setup" title="Link to this heading"></a></h2>
 <p>Once the VM creation is completed, you can start the virtual machine and connect the console with any of ther given method.</p>
 <ol class="arabic simple">
 <li><p>Press any key to boot from installtion media</p></li>
 </ol>
-<img alt="../_images/61.png" src="../_images/61.png" />
+<img alt="../_images/62.png" src="../_images/62.png" />
 <ol class="arabic simple" start="2">
 <li><p>Select the language, time and currency format, and keyboard layount. Click Next.</p></li>
 </ol>
-<img alt="../_images/71.png" src="../_images/71.png" />
+<img alt="../_images/72.png" src="../_images/72.png" />
 <ol class="arabic simple" start="3">
 <li><p>Click Install</p></li>
 </ol>
-<img alt="../_images/81.png" src="../_images/81.png" />
+<img alt="../_images/82.png" src="../_images/82.png" />
 <ol class="arabic simple" start="4">
 <li><p>Slect the appropriate OS edition and if needed Desktop experience for GUI. In our case, we are using Windows Server 2022 Datacenter Evaluation (Desktop Experience).</p></li>
 </ol>
-<img alt="../_images/9.png" src="../_images/9.png" />
+<img alt="../_images/91.png" src="../_images/91.png" />
 <ol class="arabic simple" start="5">
 <li><p>Accept the license agreement and click Next.</p></li>
 </ol>
-<img alt="../_images/10.png" src="../_images/10.png" />
+<img alt="../_images/101.png" src="../_images/101.png" />
 <ol class="arabic simple" start="6">
 <li><p>Select Custom to install a fresh OS.</p></li>
 </ol>
-<img alt="../_images/111.png" src="../_images/111.png" />
+<img alt="../_images/112.png" src="../_images/112.png" />
 <ol class="arabic simple" start="7">
 <li><p>Select appropriate drive to install the OS. You can create necessary partitions if needed. In our case, we have only one disk and no complicated partition requirements needed. select the Drive 0 and click Next. Windows OS will create necessary partitions automatically.</p></li>
 </ol>
-<img alt="../_images/12.png" src="../_images/12.png" />
+<img alt="../_images/121.png" src="../_images/121.png" />
 <ol class="arabic simple" start="8">
 <li><p>Installation will copy necessary files and it may restart the computer few times.</p></li>
 </ol>
-<img alt="../_images/13.png" src="../_images/13.png" />
-<img alt="../_images/14.png" src="../_images/14.png" />
+<img alt="../_images/131.png" src="../_images/131.png" />
+<img alt="../_images/141.png" src="../_images/141.png" />
 <ol class="arabic simple" start="9">
 <li><p>Once the installation is completed, it will prompt to set a Administrator password. This is the local Administrator account of the server. Enter a password and click Next.</p></li>
 </ol>
-<img alt="../_images/15.png" src="../_images/15.png" />
+<img alt="../_images/151.png" src="../_images/151.png" />
 <ol class="arabic simple" start="10">
 <li><p>Press Ctrl + Alt + Del to unlock the the login screen. You have to chose VM input and select the key combination.</p></li>
 </ol>
-<img alt="../_images/16.png" src="../_images/16.png" />
+<img alt="../_images/161.png" src="../_images/161.png" />
 <ol class="arabic simple" start="11">
 <li><p>Enter the Administrator password you set in previous step to login.</p></li>
 </ol>
-<img alt="../_images/17.png" src="../_images/17.png" />
+<img alt="../_images/171.png" src="../_images/171.png" />
 <ol class="arabic simple" start="12">
 <li><p>You will land in the Desktop of Windows Server 2022.</p></li>
 </ol>
-<img alt="../_images/18.png" src="../_images/18.png" />
+<img alt="../_images/181.png" src="../_images/181.png" />
 </section>
 <section id="vmware-tools-installation">
-<h2>VMware Tools Installation<a class="headerlink" href="#vmware-tools-installation" title="Permalink to this heading"></a></h2>
+<h2>VMware Tools Installation<a class="headerlink" href="#vmware-tools-installation" title="Link to this heading"></a></h2>
 <p>VMware Tools is a set of services and modules that enable several features in VMware products for better management of guests operating systems and seamless user interactions with them.</p>
 <p>VMware Tools has the ability to:</p>
 <ul class="simple">
@@ -200,11 +207,11 @@
 <li><p>Select the VM in ESXi, Click Action &gt; Gust OS &gt; Install VMware Tools. This will mount the installation CD-ROM to the guest OS.</p></li>
 <li><p>Select Setup or select autorun to start the installtion. Click Next at welcome screen.</p></li>
 </ol>
-<img alt="../_images/19.png" src="../_images/19.png" />
+<img alt="../_images/191.png" src="../_images/191.png" />
 <ol class="arabic simple" start="3">
 <li><p>You can customize the setup here. Typical option is good enough.</p></li>
 </ol>
-<img alt="../_images/20.png" src="../_images/20.png" />
+<img alt="../_images/201.png" src="../_images/201.png" />
 <ol class="arabic simple" start="4">
 <li><p>Click install to begin the setup.</p></li>
 </ol>
@@ -212,7 +219,7 @@
 <ol class="arabic simple" start="5">
 <li><p>Click finish and restart the VM.</p></li>
 </ol>
-<img alt="../_images/22.png" src="../_images/22.png" />
+<img alt="../_images/221.png" src="../_images/221.png" />
 <img alt="../_images/23.png" src="../_images/23.png" />
 </section>
 </section>
@@ -228,7 +235,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2023, Nizwan Hamza.</p>
+    <p>&#169; Copyright 2025, Nizwan Hamza.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
